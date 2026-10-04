@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Guessing Game | Prodigy InfoTech</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="game-card">
+
+            <header class="game-header">
+
+                <div class="game-icon">
+                    🎯
+                </div>
+
+                <h1>Guessing Game</h1>
+
+                <p>
+                    Guess the secret number between 1 and 100.
+                </p>
+
+            </header>
+
+
+            <section class="game-info">
+
+                <div class="info-box">
+                    <span>Range</span>
+                    <strong>1 - 100</strong>
+                </div>
+
+                <div class="info-box">
+                    <span>Attempts</span>
+                    <strong id="attemptCount">0</strong>
+                </div>
+
+            </section>
+
+
+            <section class="input-section">
+
+                <label for="guessInput">
+                    Enter your guess
+                </label>
+
+                <input
+                    type="number"
+                    id="guessInput"
+                    min="1"
+                    max="100"
+                    placeholder="Enter a number"
+                >
+
+                <button id="guessBtn">
+                    Submit Guess
+                </button>
+
+                <button
+                    id="restartBtn"
+                    class="restart-btn hidden"
+                >
+                    Play Again
+                </button>
+
+            </section>
+
+
+            <div
+                id="message"
+                class="message"
+                aria-live="polite"
+            ></div>
+
+
+            <section
+                id="resultSection"
+                class="result-section hidden"
+            >
+
+                <div class="result-icon">
+                    🏆
+                </div>
+
+                <h2>Congratulations!</h2>
+
+                <p id="resultMessage"></p>
+
+            </section>
+
+
+            <footer>
+                Prodigy InfoTech — Software Development Internship
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
